@@ -4,8 +4,6 @@ import os
 import tempfile
 from io import StringIO
 app = Flask(__name__)
-app.secret_key = 'your-secret-key-here'
-
 @app.route('/')
 def index():
     return render_template('index.html')
